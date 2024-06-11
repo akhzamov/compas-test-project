@@ -1,0 +1,147 @@
+.nav {
+	width: 100%;
+	padding: 17px 0;
+	background: linear-gradient(90deg, #000000 30%, #1c2734 73%);
+
+	@include media(800) {
+		display: none;
+	}
+
+	& .container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__left {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		&-list {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+
+		&-logo {
+			display: flex;
+			align-items: center;
+		}
+
+		&-link {
+			font-size: 18px;
+			line-height: 0.77;
+			color: $default-color;
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		&-link {
+			font-size: 18px;
+			font-weight: 700;
+			line-height: normal;
+			color: $default-color;
+		}
+
+		&-button {
+			background: transparent;
+			height: 37px;
+			border-radius: 8px;
+			padding: 0 18px;
+			font-size: 15px;
+			line-height: 0.77;
+			color: #fff;
+			border: none;
+			outline: none;
+			cursor: pointer;
+
+			&.reg {
+				background: $info-color;
+				transition: 0.2s linear;
+
+				&:hover {
+					background: $primary-color;
+				}
+			}
+
+			&.login {
+				transition: 0.2s linear;
+
+				&:hover {
+					background: $info-color;
+				}
+			}
+		}
+	}
+
+	&__menu {
+		position: fixed;
+		width: 250px;
+		height: 100vh;
+		top: 0;
+		right: -100%;
+		background: linear-gradient(180deg, #000000 30%, #1c2734 73%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 50px 0;
+		transition: 0.3s linear;
+
+		@include media(425) {
+			width: 100%;
+		}
+
+		&-button {
+			border: none;
+			background: none;
+			cursor: pointer;
+		}
+		&-close {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			border: none;
+			background: none;
+			cursor: pointer;
+		}
+
+		&.active {
+			right: 0;
+		}
+	}
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 20px;
+	}
+
+	&__bottom {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		row-gap: 20px;
+	}
+
+	&.mobile {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: none;
+
+		@include media(800) {
+			display: block;
+		}
+	}
+}
