@@ -8,9 +8,12 @@ interface Crumb {
     name: string | null;
 }
 
-const props = defineProps<{
-    title: string | undefined;
-}>();
+defineProps({
+    title: {
+        type: String,
+        default: null
+    }
+})
 
 const route = useRoute();
 const router = useRouter();
@@ -53,8 +56,8 @@ const crumbs = computed<Crumb[]>(() => {
         <li v-for="(crumb, index) in crumbs" :key="index" property="itemListElement" typeof="ListItem">
             <NuxtLink property="item" typeof="WebPage" :to="crumb.path">
                 <span property="name">{{
-                    $route.fullPath === crumb.path && props.title !== null ? props.title : crumb.title
-                }}</span>
+                    $route.fullPath === crumb.path && title !== null ? title : crumb.title
+                    }}</span>
             </NuxtLink>
             <meta property="position" :content="(index + 2).toString()" />
         </li>
@@ -64,6 +67,11 @@ const crumbs = computed<Crumb[]>(() => {
 <style scoped>
 ol {
     list-style: none;
+    margin-top: 20px;
+
+    @media (max-width:800px) {
+        margin-top: 90px;
+    }
 }
 
 li {
