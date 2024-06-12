@@ -57,7 +57,7 @@ const crumbs = computed<Crumb[]>(() => {
             <NuxtLink property="item" typeof="WebPage" :to="crumb.path">
                 <span property="name">{{
                     $route.fullPath === crumb.path && title !== null ? title : crumb.title
-                    }}</span>
+                }}</span>
             </NuxtLink>
             <meta property="position" :content="(index + 2).toString()" />
         </li>
@@ -69,6 +69,7 @@ ol {
     list-style: none;
     margin-top: 20px;
     display: flex;
+
 
     @media (max-width:800px) {
         margin-top: 90px;
@@ -99,11 +100,13 @@ li:last-child:after {
     display: none;
 }
 
-li a {
+li a span {
     color: black;
+    font-size: 13px;
+    line-height: 1.2;
 }
 
-li a.nuxt-link-exact-active.nuxt-link-active {
-    color: grey;
+li a.router-link-active span {
+    color: #8F8F8F;
 }
 </style>
