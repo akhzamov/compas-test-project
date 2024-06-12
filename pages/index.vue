@@ -11,6 +11,10 @@ useSeoMeta({
     <header class="header">
         <Header />
     </header>
+    <main class="main">
+        <Services />
+        <Documents />
+    </main>
 </template>
 
 <style scoped></style>

@@ -1,0 +1,75 @@
+.modals {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: $default-grey-30;
+	z-index: 1000;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	& .content {
+		background: $default-color;
+		border-radius: 10px;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+
+		&__title {
+			font-size: 20px;
+			line-height: 0.77;
+			color: $main-text-color;
+		}
+
+		&__text {
+			font-size: 20px;
+			line-height: 0.77;
+			color: $main-text-color;
+		}
+
+		&__button {
+			background: transparent;
+			outline: none;
+			border: none;
+			min-width: 60px;
+			padding: 0 10px;
+			height: 37px;
+			border-radius: 8px;
+			font-size: 15px;
+			line-height: 0.77;
+			cursor: pointer;
+		}
+	}
+
+	& .success {
+		&-button {
+			background: $success-bg-color;
+			color: $success-color;
+			transition: 0.2s linear;
+
+			&:hover {
+				color: $success-bg-color;
+				background: $success-color;
+			}
+		}
+	}
+
+	& .error {
+		&-button {
+			background: $danger-bg-color;
+			color: $danger-color;
+			transition: 0.2s linear;
+
+			&:hover {
+				color: $danger-bg-color;
+				background: $danger-color;
+			}
+		}
+	}
+}

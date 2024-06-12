@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import * as yup from 'yup'
+
+const modalStore = useModalWindowStore()
+
 const schema = yup.object({
     automobile: yup.string().required('Введите номер автомобиля'),
     region: yup.string().required('Введите регион'),
@@ -19,9 +22,19 @@ const [testimony, testimonyAttrs] = defineField('testimony')
 
 
 const onSubmit = handleSubmit(async values => {
-    console.log('Send');
+    console.log(values);
+    modalStore.modalOpen = true
+    modalStore.successModalActive = true
+    modalStore.successModalTitle = 'Успешно!'
+    modalStore.successModalText = 'Заявка на проверку отправлено!'
+    modalStore.successModalButtonText = 'Понятно'
 })
 
+const openVideo = () => {
+    modalStore.modalOpen = true
+    modalStore.videoModalActive = true
+    modalStore.videoModalButtonText = 'Закрыть'
+}
 </script>
 
 <template>
@@ -64,7 +77,7 @@ const onSubmit = handleSubmit(async values => {
                         Проверить штрафы
                         <img src="~/assets/img/right-icon.svg" alt="">
                     </button>
-                    <button class="header__content-form-button watch" type="button">
+                    <button class="header__content-form-button watch" type="button" @click="openVideo()">
                         <img src="~/assets/img/youtube-icon.svg" alt="">
                         О Сервисе <span>(1 мин. 20 cек)</span>
                     </button>
