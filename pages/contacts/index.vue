@@ -12,7 +12,7 @@ useSeoMeta({
         <div class="container">
             <UIBreadcrumbs />
             <div class="contacts__content">
-                <h2 class="contacts__content-title title-glob_g">Тарифы</h2>
+                <h2 class="contacts__content-title title-glob_g">Контакты</h2>
             </div>
         </div>
     </section>
