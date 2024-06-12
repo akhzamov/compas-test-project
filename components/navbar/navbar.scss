@@ -34,7 +34,7 @@
 
 		&-link {
 			font-size: 18px;
-			line-height: 0.77;
+			line-height: 1.2;
 			color: $default-color;
 		}
 	}
@@ -47,7 +47,7 @@
 		&-link {
 			font-size: 18px;
 			font-weight: 700;
-			line-height: normal;
+			line-height: 1.2;
 			color: $default-color;
 		}
 
@@ -57,7 +57,7 @@
 			border-radius: 8px;
 			padding: 0 18px;
 			font-size: 15px;
-			line-height: 0.77;
+			line-height: 1.2;
 			color: #fff;
 			border: none;
 			outline: none;
@@ -146,23 +146,4 @@
 			display: block;
 		}
 	}
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-	width: 80px !important;
-	height: 80px !important;
-	background: rgba(166, 183, 212, 0.47);
-	border-radius: 50%;
-	color: $default-color !important;
-	display: flex !important;
-	align-items: center !important;
-	justify-content: center !important;
-}
-
-.swiper-button-next {
-	margin-right: -35px;
-}
-.swiper-button-prev {
-	margin-left: -35px;
 }

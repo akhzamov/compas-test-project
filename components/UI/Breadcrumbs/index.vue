@@ -68,6 +68,7 @@ const crumbs = computed<Crumb[]>(() => {
 ol {
     list-style: none;
     margin-top: 20px;
+    display: flex;
 
     @media (max-width:800px) {
         margin-top: 90px;
@@ -75,19 +76,27 @@ ol {
 }
 
 li {
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
 }
 
 li:after {
-    content: ' » ';
-    display: inline;
-    font-size: 0.9em;
-    color: #aaa;
-    padding: 0 0.0725em 0 0.15em;
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 li:last-child:after {
     content: '';
+    display: none;
 }
 
 li a {

@@ -90,7 +90,7 @@ li {
 .title-glob_g {
 	font-size: 41px;
 	font-weight: 600;
-	line-height: normal;
+	line-height: 1.2;
 	color: $main-text-color;
 
 	@include media(1280) {
@@ -110,7 +110,7 @@ li {
 
 .title-glob_s {
 	font-size: 34px;
-	line-height: 0.83;
+	line-height: 1.2;
 	color: $main-text-color;
 	font-weight: 700;
 	text-align: center;
@@ -157,7 +157,7 @@ li {
 		color: $main-text-color;
 		font-weight: 500;
 		font-size: 14px;
-		line-height: normal;
+		line-height: 1.2;
 		margin-bottom: 5px;
 	}
 
@@ -167,8 +167,7 @@ li {
 		color: $danger-color;
 		font-weight: 400;
 		font-size: 10px;
-		line-height: normal;
-		text-transform: uppercase;
+		line-height: 1.2;
 		margin: 5px;
 
 		&.active {
@@ -200,7 +199,7 @@ li {
 		color: $main-text-color;
 		font-weight: 500;
 		font-size: 14px;
-		line-height: normal;
+		line-height: 1.2;
 		margin-bottom: 5px;
 	}
 
@@ -210,8 +209,7 @@ li {
 		color: $danger-color;
 		font-weight: 400;
 		font-size: 10px;
-		line-height: normal;
-		text-transform: uppercase;
+		line-height: 1.2;
 		margin: 5px;
 
 		&.active {
@@ -240,7 +238,7 @@ li {
 	padding: 9px 18px;
 	border: none;
 	font-size: 15px;
-	line-height: 0.77;
+	line-height: 1.2;
 
 	&.none-w {
 		background: transparent;

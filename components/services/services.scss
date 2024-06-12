@@ -45,7 +45,7 @@
 
 			&-title {
 				font-size: 18px;
-				line-height: 0.83;
+				line-height: 1.2;
 				font-weight: 700;
 				color: $primary-color;
 
@@ -56,7 +56,7 @@
 
 			&-text {
 				font-size: 15px;
-				line-height: 0.83;
+				line-height: 1.2;
 				color: $main-text-color;
 
 				@include media(580) {

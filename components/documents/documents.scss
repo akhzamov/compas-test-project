@@ -5,15 +5,15 @@
 	&__swiper {
 		margin-top: 40px !important;
 		width: 100% !important;
-		height: 550px !important;
-		padding: 50px 31px !important;
+		height: 460px !important;
+		padding: 10px 31px !important;
 		user-select: none;
 	}
 
 	&__slide {
 		height: 100%;
 		border: 1px solid #eeeff1;
-		box-shadow: 0px 0px 20px 0px #0000001f;
+		box-shadow: 0px 0px 7px 0px #0000001f;
 		background: $default_color;
 		border-radius: 10px;
 		padding: 25px;
@@ -29,7 +29,7 @@
 
 		&-title {
 			font-size: 31px;
-			line-height: 0.83;
+			line-height: 1.2;
 			font-weight: 700;
 			color: $primary_color;
 		}
@@ -37,7 +37,7 @@
 		&-text {
 			margin-top: 15px;
 			font-size: 18px;
-			line-height: 0.83;
+			line-height: 1.2;
 			color: $main_text_color;
 		}
 
@@ -51,7 +51,7 @@
 			border-radius: 8px;
 			padding: 0 20px;
 			font-size: 18px;
-			line-height: 0.77;
+			line-height: 1.2;
 			color: $default-color;
 			display: flex;
 			align-items: center;
@@ -70,6 +70,40 @@
 			@include media(435) {
 				width: 100%;
 			}
+		}
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	height: 80px !important;
+	width: 40px !important;
+	transition: 0.2s linear;
+	&::after {
+		display: none;
+	}
+
+	&:hover {
+		scale: 0.95;
+	}
+}
+
+.swiper-button-next {
+	background-image: url('~/assets/img/right-button-sw.svg') !important;
+	margin-right: -10px;
+}
+
+.swiper-button-prev {
+	background-image: url('~/assets/img/left-button-sw.svg') !important;
+	margin-left: -10px;
+}
+
+.document,
+.fees,
+.contacts {
+	&__content {
+		&-title {
+			margin-top: 20px;
 		}
 	}
 }

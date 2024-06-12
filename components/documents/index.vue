@@ -28,7 +28,7 @@ const breakpoints = reactive({
     },
     1024: {
         slidesPerView: 2,
-        spaceBetween: 50,
+        spaceBetween: 45,
     },
     1140: {
         slidesPerView: 3,

@@ -2,8 +2,8 @@
 useSeoMeta({
     title: 'Compas | 404',
     ogTitle: 'Compas | 404',
-    description: 'The site is in test mode',
-    ogDescription: 'The site is in test mode',
+    description: 'Сайт работает в тестовом режиме',
+    ogDescription: 'Сайт работает в тестовом режиме',
 })
 </script>
 

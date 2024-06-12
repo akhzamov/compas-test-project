@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 useSeoMeta({
-    title: 'Compas | Home',
-    ogTitle: 'Compas | Home',
-    description: 'The site is in test mode',
-    ogDescription: 'The site is in test mode',
+    title: 'Compas | Главная',
+    ogTitle: 'Compas | Главня',
+    description: 'Сайт работает в тестовом режиме',
+    ogDescription: 'Сайт работает в тестовом режиме',
 })
 </script>
 
