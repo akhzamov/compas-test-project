@@ -35,11 +35,10 @@ const close = () => {
 
 <template>
     <div class="modals" @click="close()">
-        <div class="success content" @click.stop>
+        <div class="success video content" @click.stop>
             <h3 class="content__title success-title">О сервисе</h3>
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/n1Rfi8BzNOY?si=cBbcl1Kl5IB0q2GT&amp;controls=0"
-                title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/n1Rfi8BzNOY?si=ETJ-67kDBhs7AHMD" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <button class="content__button success-button" @click="close()">

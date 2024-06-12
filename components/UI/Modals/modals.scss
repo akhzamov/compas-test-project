@@ -72,4 +72,21 @@
 			}
 		}
 	}
+
+	& .video {
+		margin: 0 5px;
+
+		@include media(610) {
+			width: 100%;
+		}
+
+		& iframe {
+			width: 500px;
+			height: 300px;
+			border-radius: 10px;
+			@include media(610) {
+				width: 100%;
+			}
+		}
+	}
 }
